@@ -1,0 +1,47 @@
+﻿@model CreateReservationModel
+<form asp-controller="Reservation" asp-action="Index" method="post">
+    <h4>Please fill in reservation info,</h4>
+
+    <div>
+        <label asp-for="Name">Name : </label>
+        <div>
+            <input asp-for="Name" />
+        </div>
+    </div>
+    <div>
+        <label asp-for="Username">Username : </label>
+        <div>
+            <input asp-for="Username" />
+        </div>
+    </div>
+    <div>
+        <label asp-for="Password">Password : </label>
+        <div>
+            <input asp-for="Password" />
+        </div>
+    </div>
+    <div>
+        <label asp-for="City">City : </label>
+        <div>
+            <input asp-for="City" />
+        </div>
+    </div> 
+    <div>
+        <label asp-for="tUser">Type of user : </label>
+        <div>
+            <input asp-for="tUser" />
+        </div>
+    </div> 
+    <div>
+        <label asp-for="Confirmation"></label>
+        <div>
+            <input type="checkbox" asp-for="Confirmation" />
+        </div>
+    </div>
+    <div>
+        <div>
+            <input type="submit" class="btn btn-primary" value="Create" />
+        </div>
+    </div>
+    
+</form>
